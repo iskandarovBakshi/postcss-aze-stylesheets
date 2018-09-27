@@ -1,0 +1,44 @@
+{
+  "name": "postcss-aze-stylesheets",
+  "version": "1.0.0",
+  "description": "PostCSS plugin to support Azerbaijani stylesheets",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "azerbaijan",
+    "azerbaijani",
+    "azerbaijani-stylesheets",
+    "fun"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iskandarovBakshi/postcss-aze-stylesheets"
+  },
+  "author": "Bakshi Iskandarov <bifo92@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bugs": {
+    "url": "https://github.com/iskandarovBakshi/postcss-aze-stylesheets/issues"
+  },
+  "homepage": "https://github.com/iskandarovBakshi/postcss-aze-stylesheets",
+  "dependencies": {
+    "postcss": "^5.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "test": "npm run clean && npm run lint && npm run publish && jest",
+    "lint": "eslint src",
+    "publish": "babel src --out-dir dist"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1",
+    "rimraf": "^2.6.2"
+  }
+}

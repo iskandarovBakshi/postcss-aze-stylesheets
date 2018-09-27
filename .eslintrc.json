@@ -1,0 +1,20 @@
+{
+    "extends": "airbnb-base",
+    "overrides": [
+        {
+            "files": ["test/**/*.js"],
+            "env": {
+                "jest": true
+            },
+            "rules": {
+              "no-unused-expressions": 0
+            }
+        }
+    ],
+    "rules": {
+      "no-param-reassign": 0,
+      "quote-props": 0,
+      "arrow-body-style": 0,
+      "no-unused-expressions": 0
+    }
+}
