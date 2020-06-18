@@ -1,9 +1,9 @@
-import postcss from 'postcss';
+import postcss from "postcss";
 
-import azerbaijaniProperties from './properties';
-import azerbaijaniValues from './values';
+import azerbaijaniProperties from "./properties";
+import azerbaijaniValues from "./values";
 
-export default postcss.plugin('postcss-aze-stylesheets', () => {
+export default postcss.plugin("postcss-aze-stylesheets", () => {
   return (css) => {
     css.walkDecls((decl) => {
       Object.keys(azerbaijaniProperties).forEach((property) => {
@@ -12,8 +12,8 @@ export default postcss.plugin('postcss-aze-stylesheets', () => {
           decl.prop === azerbaijaniProperty && (decl.prop = property);
         }
 
-        if (decl.value.indexOf('!vacib') >= 0) {
-          decl.value = decl.value.replace(/\s*!vacib\s*/, '');
+        if (decl.value.indexOf("!vacib") >= 0) {
+          decl.value = decl.value.replace(/\s*!vacib\s*/, "");
           decl.important = true;
         }
       });
