@@ -1,0 +1,13 @@
+{
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "checkJs": true
+  }
+}
