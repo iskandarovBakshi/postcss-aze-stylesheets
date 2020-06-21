@@ -3,3 +3,4 @@ npm-debug.log
 dist/
 .idea
 .vscode/
+.DS_Store
