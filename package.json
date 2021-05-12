@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/iskandarovBakshi/postcss-aze-stylesheets",
   "dependencies": {
-    "postcss": "^7.0.32"
+    "postcss": "^8.2.10"
   },
   "scripts": {
     "clean": "rimraf dist/",
